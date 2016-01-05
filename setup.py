@@ -10,6 +10,7 @@ setup(
     install_requires=[
         'Click',
     ],
+    url='https://github.com/ziotom78/plot_joblog',
     license='MIT',
     keywords='plot cli gnuparallel',
     entry_points='''
