@@ -86,18 +86,17 @@ def display_jobs(job_list, max_num_of_chars=80, space=' ', fill='*'):
 @click.version_option(version=__version__)
 @click.argument('input_file', type=click.File('rt'))
 @click.option('-w', '--width', default=80, type=int, metavar='NUM',
-              help='Maximum number of characters to use for the bars '
-              '(default: %(default)d)')
+              help='Maximum number of characters to use for the bars',
+              show_default=True)
 @click.option('-s', '--sort', 'ordering', default='seq', metavar='FIELD',
               help='Specify how jobs should be ordered. Possible values '
-              'are "seq", "starttime", "endtime", and "runtime" '
-              '(default: "%(default)s")')
+              'are "seq", "starttime", "endtime", and "runtime"',
+              show_default=True)
 @click.option('--space', default=DEFAULT_SPACE, metavar='CHAR',
-              help='Character to use for the plot background (default: '
-              '"%(default)s")')
+              help='Character to use for the plot background')
 @click.option('--fill', default=DEFAULT_FILL, metavar='CHAR',
-              help='Character to use for the plot bars (default: '
-              '"%(default)s")')
+              help='Character to use for the plot bars',
+              show_default=True)
 def main(input_file, width, ordering, space, fill):
 
     sort_dict = {'seq': lambda x: x.seq,
