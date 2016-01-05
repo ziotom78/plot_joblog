@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='plot_joblog',
-    version='1.0.0',
+    version='1.0.1',
     description='Produce a time chart of the jobs ran by GNU parallel',
     author='Maurizio Tomasi',
     author_email='ziotom78@gmail.com',
