@@ -40,6 +40,7 @@ Here is an example of the output::
     $
 
 Output can be customized by means of the following parameters:
+
 - ``--width`` specifies the overall width of each bar, in characters.
 - ``--space`` allows to set up the character used to fill the
   background of the bar.
